@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="script.js"></script>
+  <!--
+ <link rel="stylesheet" href="style.css">  -->
+  <!-- <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+/> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body onload="contador()" class="bg-indigo-950">
+  <div class="text-zinc-50 flex justify-center align-center flex-col items-center h-screen">
+    <div class="bg-slate-300 bg-opacity-50 p-5 rounded-md">
+      <div class="flex justify-center items-center flex-col">
+        <h1 class="text-3xl p-2 lg:text-6xl font-bold lg:p-4">Contador</h1>
+        <h1 id="contador" class="text-8xl font-bold p-4 drop-shadow-2xl">0</h1>
+      </div>
+      <div class="flex flex-col m-5 lg:flex lg:flex-row lg:justify-center lg:items-center lg:pt-5">
+        <button onclick="aumentar()"
+          class="p-2 mb-5 bg-pink-900 lg:p-4 rounded-lg lg:mr-5 hover:bg-pink-700 hover:p-6 ease-in-out duration-500 shadow-xl">Agregar
+          1</button>
+        <button onclick="resetear()"
+          class="p-2 mb-5 bg-pink-900 lg:p-4 rounded-lg hover:bg-pink-700 pointer-events-auto hover:p-6 ease-in-out duration-500 shadow-xl">Resetear</button>
+      </div>
+
+
+    </div>
+</body>
+
+</html>
